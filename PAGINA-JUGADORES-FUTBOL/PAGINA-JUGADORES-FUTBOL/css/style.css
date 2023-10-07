@@ -1,0 +1,247 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    padding: 100px 0px;
+    background: #ffffff;
+
+}
+
+.section_title{
+    margin-bottom: 30px;
+}
+
+
+.section_title h2{
+    position: relative;
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+
+}
+
+
+.section_title h2::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #24CAAC;
+    left: 50%;
+    width: 8%;
+    bottom: 0;
+    transform: translateX(-50%) rotate(356deg);
+}
+
+/* ==================================
+-------------header css-------------
+===================================== */
+
+header{
+    background: #e9e9e9;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.801);
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+
+}
+
+#menu_bar{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px 0px;
+}
+
+.logo h2 a{
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.nav_links{
+    display: flex;
+}
+
+.nav_links li a{
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    transition: .3s;
+    text-align: center;
+}
+
+.nav_links li a:hover{
+    background: #24CAAC;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+
+/* ==================================
+-------------home seciton css-------------
+===================================== */
+
+
+#home{
+    background: #ffffff;
+}
+
+.inner_home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    color: #ffffff;
+}
+
+.child_home{
+    flex-basis: 45%;
+}
+
+.child_home h1{
+    font-size: 42px;
+    line-height: 48px;
+    color: #00ffd0;
+}
+
+.highlight{
+    color: #000d70;
+}
+
+.child_home p{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.btn{
+    background: #24CAAC;
+    padding: 10px 25px;
+    border: 1px solid #24CAAC;
+    border-radius: 25px;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.btn:hover{
+    background: transparent;
+}
+
+
+
+/* ==================================
+-------------courses section css-------------
+===================================== */
+
+#courses{
+    background: #ffffff;
+}
+
+#courses .section_title h2::after {
+    transform: translateX(-110%) rotate(356deg);
+}
+
+.inner_courses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.child_courses{
+    flex-basis: 24%;
+    color: #ffffff;
+    padding: 20px 10px 20px 10px;
+    border: 1px solid transparent;
+    transition: .3s;
+    border-radius: 5px;
+
+}
+
+.child_courses:hover{
+    border: 1px solid #24CAAC;
+}
+
+.child_courses .course_img img{
+    border-radius: 5px;
+}
+
+
+.child_courses .detail ul{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+
+}
+.child_courses .detail ul li i{
+    color: gold;
+}
+
+
+
+
+.child_courses {
+    position: relative;
+  }
+  
+  .informacion {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top:0; /* Coloca .informacion debajo del elemento padre */
+    left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.585);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .child_courses:hover .informacion {
+    opacity: 1;
+    visibility: visible;
+  }
+  .child_courses {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .course_img img {
+    transition: transform 0.3s ease;
+  }
+  
+  .child_courses:hover .course_img img {
+    transform: scale(1.2);
+  }

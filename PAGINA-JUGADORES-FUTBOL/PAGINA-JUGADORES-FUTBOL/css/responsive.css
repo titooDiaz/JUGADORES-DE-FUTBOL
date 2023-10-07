@@ -1,0 +1,143 @@
+@media  screen and (max-width: 770px){
+    .navbar{
+        width: 90%;
+    }
+
+    .logo h2 a{
+        font-size: 20px;
+    }
+
+
+    #menu_bar{
+        display: grid;
+        color: #000000;
+        position: absolute;
+        right: 5%;
+        top: 20%;
+        border: 1px solid #fff;
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+        cursor: pointer;
+
+    }
+
+    .nav_links{
+        flex-direction: column;
+        position: absolute;
+        background: #ffffff;
+        width: 100%;
+        left: 0;
+        top: -450px;
+        padding: 0;
+    }
+
+
+    .nav_links li a{
+        border-bottom: 1px solid #000000;
+        display: block;
+        border-radius: 0;
+        padding: 10px 0;
+        margin: 0 20px;
+
+    }
+
+    .nav_links li:last-child a{
+        border-bottom: none;
+    }
+
+    .inner_home{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+
+    }
+
+    .child_home{
+        flex-basis: 100%;
+    }
+
+    .child_home:last-child{
+        margin-bottom: 20px;
+    }
+
+    .child_home h1{
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .child_home p{
+        font-size: 20px;
+    }
+
+    /* why us section */
+    .why_us_child{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    .why_us_child .icon{
+        margin-bottom: 10px;
+    }
+
+    /* courses section */
+
+    .child_courses{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    /* achivement section */
+    .child_achivement{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    .child_achivement2 .single_detail{
+        flex-basis: 100%;
+    }
+
+    .child_achivement2 .sd_3{
+        margin-bottom: 20px;
+    }
+
+    /* testimonail secition */
+    .child_testi{
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+
+    .child_testi:last-child{
+        margin-bottom: 0px;
+    }
+
+    #testimonial .section_title h2{
+        font-size: 30px;
+        line-height: 28px;
+    }
+
+    /* contact section */
+    .child_contact{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* footer section */
+    .child_footer{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    .child_footer h3{
+        margin-bottom: 10px;
+    }
+
+    .child_footer p{
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+
+    .footer_contact li{
+        line-height: 22px;
+    }
+}
