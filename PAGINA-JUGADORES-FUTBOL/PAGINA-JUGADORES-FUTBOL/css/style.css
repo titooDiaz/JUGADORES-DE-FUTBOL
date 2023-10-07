@@ -245,3 +245,22 @@ header{
   .child_courses:hover .course_img img {
     transform: scale(1.2);
   }
+
+
+  footer{
+    width: 100%;
+    height: 50px;
+    background-color: #c9c9c9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  a{
+    color: #000;
+    transition: 0.3s ease;
+  }
+  a:hover{
+    color: #000d70;
+    font-size: 30px;
+  }
